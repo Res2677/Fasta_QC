@@ -1,0 +1,7 @@
+library(venneuler)
+MyVenn <- venneuler(c(Tumor=17813,Blood=2669,"Tumor&Blood"=14235))
+MyVenn$labels <-c("","")
+plot(MyVenn)
+text(0.1,0.52,"Blood\n2669")
+text(0.8,0.52,"Tumor\n17813")
+text(0.45,0.52,"14235")
